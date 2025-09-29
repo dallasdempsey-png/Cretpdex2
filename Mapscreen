@@ -1,0 +1,34 @@
+import React from 'react';
+import { View, StyleSheet } from 'react-native';
+import MapView, { Marker } from 'react-native-maps';
+import cryptids from '../data/cryptdex.json';
+
+export default function MapScreen() {
+  return (
+    <View style={styles.container}>
+      <MapView
+        style={styles.map}
+        initialRegion={{
+          latitude: 39.0119, // Kansas center
+          longitude: -98.4842,
+          latitudeDelta: 10,
+          longitudeDelta: 10
+        }}
+      >
+        {cryptids.map((c) => (
+          <Marker
+            key={c.id}
+            coordinate={{ latitude: c.latitude, longitude: c.longitude }}
+            title={c.name}
+            description={c.region}
+          />
+        ))}
+      </MapView>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: { flex: 1 },
+  map: { flex: 1 }
+});

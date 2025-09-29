@@ -1,0 +1,43 @@
+import React from 'react';
+import { View, Text, FlatList, StyleSheet, TouchableOpacity } from 'react-native';
+import cryptids from '../data/cryptdex.json';
+import { useNavigation } from '@react-navigation/native';
+
+export default function CryptdexHome() {
+  const navigation = useNavigation();
+
+  const renderItem = ({ item }) => (
+    <TouchableOpacity
+      style={styles.card}
+      onPress={() => navigation.navigate('Details', { cryptid: item })}
+    >
+      <Text style={styles.name}>{item.name}</Text>
+      <Text style={styles.region}>{item.region}</Text>
+      <Text style={styles.summary}>{item.summary}</Text>
+    </TouchableOpacity>
+  );
+
+  return (
+    <View style={styles.container}>
+      <FlatList
+        data={cryptids}
+        keyExtractor={(item) => item.id}
+        renderItem={renderItem}
+        contentContainerStyle={styles.list}
+      />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: { flex: 1, backgroundColor: '#fff' },
+  list: { padding: 16 },
+  card: {
+    backgroundColor: '#f0f0f0',
+    padding: 16,
+    marginBottom: 12,
+    borderRadius: 8
+  },
+  name: { fontSize: 18, fontWeight: 'bold' },
+  region: { fontSize: 14, color: '#666' },
+  summary: { marginTop: 4

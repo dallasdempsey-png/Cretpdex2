@@ -1,0 +1,93 @@
+import React, { useState } from 'react';
+import { View, TextInput, Button, Image, StyleSheet, Alert } from 'react-native';
+import * as Location from 'expo-location';
+import * as ImagePicker from 'expo-image-picker';
+import { db, storage } from '../firebase';
+import { collection, addDoc } from 'firebase/firestore';
+import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
+
+export default function SightingForm() {
+  const [cryptid, setCryptid] = useState('');
+  const [locationText, setLocationText] = useState('');
+  const [description, setDescription] = useState('');
+  const [imageUri, setImageUri] = useState(null);
+
+  const pickImage = async () => {
+    const result = await ImagePicker.launchImageLibraryAsync({
+      mediaTypes: ImagePicker.MediaTypeOptions.Images,
+      quality: 0.7
+    });
+    if (!result.canceled) setImageUri(result.assets[0].uri);
+  };
+
+  const submitSighting = async () => {
+    try {
+      const { status } = await Location.requestForegroundPermissionsAsync();
+      if (status !== 'granted') throw new Error('Location permission denied');
+
+      const { coords } = await Location.getCurrentPositionAsync({});
+      let imageUrl = null;
+
+      if (imageUri) {
+        const response = await fetch(imageUri);
+        const blob = await response.blob();
+        const filename = `sightings/${Date.now()}.jpg`;
+        const storageRef = ref(storage, filename);
+        await uploadBytes(storageRef, blob);
+        imageUrl = await getDownloadURL(storageRef);
+      }
+
+      await addDoc(collection(db, 'sightings'), {
+        cryptid,
+        location: locationText,
+        description,
+        latitude: coords.latitude,
+        longitude: coords.longitude,
+        image: imageUrl,
+        timestamp: new Date().toISOString()
+      });
+
+      Alert.alert('Success', 'Sighting submitted!');
+      setCryptid('');
+      setLocationText('');
+      setDescription('');
+      setImageUri(null);
+    } catch (error) {
+      Alert.alert('Error', error.message);
+    }
+  };
+
+  return (
+    <View style={styles.container}>
+      <TextInput
+        placeholder="Cryptid Name"
+        value={cryptid}
+        onChangeText={setCryptid}
+        style={styles.input}
+      />
+      <TextInput
+        placeholder="Location Description"
+        value={locationText}
+        onChangeText={setLocationText}
+        style={styles.input}
+      />
+      <TextInput
+        placeholder="Sighting Details"
+        value={description}
+        onChangeText={setDescription}
+        style={[styles.input, styles.multiline]}
+        multiline
+      />
+      <Button title="Pick Image" onPress={pickImage} />
+      {imageUri && <Image source={{ uri: imageUri }} style={styles.image} />}
+      <Button title="Submit Sighting" onPress={submitSighting} />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: { padding: 20 },
+  input: { marginBottom: 10, borderBottomWidth: 1, padding: 8 },
+  multiline: { height: 80, textAlignVertical: 'top' },
+  image: { height: 200, marginVertical: 10, borderRadius: 8 }
+});

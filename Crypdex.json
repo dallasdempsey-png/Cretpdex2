@@ -1,0 +1,370 @@
+{
+  "regions": {
+    "Appalachia & Southeast": {
+      "Low": [
+        {
+          "name": "Booger",
+          "origin": "Appalachian folklore",
+          "category": "Humanoid",
+          "lore": "A catch-all term for forest-dwelling creatures used to scare children; often described as hairy, mischievous, and elusive."
+        },
+        {
+          "name": "Haint",
+          "origin": "Southern U.S. folklore",
+          "category": "Spectral",
+          "lore": "Ghostly spirits that haunt homes and graveyards; traditionally repelled by “haint blue” paint on porches and windows."
+        }
+      ],
+      "Medium": [
+        {
+          "name": "Wampus Cat",
+          "origin": "Cherokee/Southern U.S.",
+          "category": "Beast",
+          "lore": "A six-legged feline guardian spirit or cursed woman; known for its stealth and eerie cries in the woods."
+        },
+        {
+          "name": "Not-Deer",
+          "origin": "Appalachian TikTok lore",
+          "category": "Beast",
+          "lore": "An uncanny deer-like entity with unnatural movements and human-like eyes; often seen near roads or trails."
+        },
+        {
+          "name": "Screaming Woman",
+          "origin": "South Carolina folklore",
+          "category": "Spectral",
+          "lore": "A ghostly female figure heard screaming in the woods; associated with tragic death and local hauntings."
+        },
+        {
+          "name": "Devil Dog of Valle Crucis",
+          "origin": "North Carolina legend",
+          "category": "Beast",
+          "lore": "A spectral canine with glowing eyes that chases travelers; often seen near bridges and graveyards."
+        }
+      ],
+      "High": [
+        {
+          "name": "Boo Hag",
+          "origin": "Gullah folklore (South Carolina)",
+          "category": "Shapeshifter",
+          "lore": "A skinless witch that rides sleeping victims and drains their energy; repelled by salt and brooms."
+        },
+        {
+          "name": "Grunch",
+          "origin": "New Orleans urban legend",
+          "category": "Beast",
+          "lore": "Goat-like creature born of voodoo experiments; known for attacking pets and livestock in remote areas."
+        },
+        {
+          "name": "Whistler",
+          "origin": "Louisiana legend",
+          "category": "Spectral",
+          "lore": "A whistling entity that mimics sounds to lure victims; often heard before disappearances or deaths."
+        },
+        {
+          "name": "Pope Lick Monster",
+          "origin": "Kentucky urban legend",
+          "category": "Hybrid",
+          "lore": "Goatman said to hypnotize or chase people onto train tracks; linked to multiple fatal encounters."
+        }
+      ]
+    },
+    "Midwest & Great Plains": {
+      "Low": [
+        {
+          "name": "Sinkhole Sam",
+          "origin": "Kansas lake lore",
+          "category": "Aquatic",
+          "lore": "Giant wormlike creature seen in a sinkhole lake; rarely aggressive, mostly elusive."
+        },
+        {
+          "name": "Beast of Busco",
+          "origin": "Indiana folklore",
+          "category": "Beast",
+          "lore": "Oversized snapping turtle spotted in Fulk Lake; considered more of a local curiosity than a threat."
+        },
+        {
+          "name": "Specter Moose",
+          "origin": "Maine ghost stories",
+          "category": "Spectral",
+          "lore": "A ghostly moose seen before disasters; often described as pale and oversized."
+        },
+        {
+          "name": "Lady in White",
+          "origin": "Multiple states",
+          "category": "Spectral",
+          "lore": "Classic ghost of a woman who died tragically; often seen near roads or graveyards."
+        }
+      ],
+      "Medium": [
+        {
+          "name": "Loveland Frogman",
+          "origin": "Ohio urban legend",
+          "category": "Humanoid",
+          "lore": "Humanoid frog with a wand-like device; sightings date back to the 1950s."
+        },
+        {
+          "name": "Hodag",
+          "origin": "Wisconsin lumberjack lore",
+          "category": "Beast",
+          "lore": "Horned creature with a spiked tail; said to be born from the ashes of cremated oxen."
+        },
+        {
+          "name": "Cohomo Monster",
+          "origin": "Illinois river lore",
+          "category": "Aquatic",
+          "lore": "River-dwelling creature with glowing eyes and foul odor; linked to livestock disappearances."
+        },
+        {
+          "name": "Green Clawed Beast",
+          "origin": "Indiana river lore",
+          "category": "Aquatic",
+          "lore": "Aquatic entity that attacked a swimmer in 1955; left claw marks and caused lasting trauma."
+        },
+        {
+          "name": "Enfield Horror",
+          "origin": "Illinois newspaper reports",
+          "category": "Hybrid",
+          "lore": "Three-legged creature with glowing eyes and a hopping gait; caused panic in the 1970s."
+        },
+        {
+          "name": "Red-Eyed Entity",
+          "origin": "Midwest YouTube horror",
+          "category": "Spectral",
+          "lore": "Often seen in haunted woods or basements; associated with sleep paralysis and dread."
+        }
+      ],
+      "High": []
+    },
+    "Southwest & Desert": {
+      "Low": [
+        {
+          "name": "Cactus Cat",
+          "origin": "Frontier folklore",
+          "category": "Beast",
+          "lore": "Thorny feline that drinks cactus juice and howls at night; more mischievous than dangerous."
+        },
+        {
+          "name": "Tommyknockers",
+          "origin": "Mining folklore",
+          "category": "Spectral",
+          "lore": "Spirits that knock in mines to warn or trick miners; sometimes helpful, sometimes malicious."
+        }
+      ],
+      "Medium": [
+        {
+          "name": "Yucca Man",
+          "origin": "California desert lore",
+          "category": "Humanoid",
+          "lore": "Desert-dwelling ape-man seen near military bases; often described as silent and fast-moving."
+        },
+        {
+          "name": "Mogollon Monster",
+          "origin": "Arizona Bigfoot lore",
+          "category": "Beast",
+          "lore": "Hairy humanoid with red eyes and foul odor; known for aggressive behavior and livestock attacks."
+        },
+        {
+          "name": "Slide-Rock Bolter",
+          "origin": "Colorado lumberjack lore",
+          "category": "Beast",
+          "lore": "Mountain creature that slides down slopes to devour tourists; said to be attracted to steep terrain."
+        },
+        {
+          "name": "Red Ghost",
+          "origin": "Arizona frontier lore",
+          "category": "Hybrid",
+          "lore": "Phantom camel with a rider’s skeleton; linked to violent encounters and ghost stories."
+        }
+      ],
+      "High": [
+        {
+          "name": "Skinwalker",
+          "origin": "Navajo legend",
+          "category": "Shapeshifter",
+          "lore": "Witch who transforms into animals to harm others; feared for its ability to mimic voices and possess people."
+        },
+        {
+          "name": "Stikini",
+          "origin": "Seminole legend",
+          "category": "Shapeshifter",
+          "lore": "Owl-witch that vomits its organs to hunt; associated with death and taboo rituals."
+        },
+        {
+          "name": "Hidebehind",
+          "origin": "Lumberjack folklore",
+          "category": "Humanoid",
+          "lore": "Creature that hides behind trees and snatches victims; never seen directly, always feared."
+        }
+      ]
+    }
+  }
+}{
+  "regions": {
+    "Pacific Northwest & Rockies": {
+      "Low": [
+        {
+          "name": "Gumberoo",
+          "origin": "Logging folklore",
+          "category": "Beast",
+          "lore": "Bulletproof bear-like creature with rubbery skin; explodes when exposed to fire."
+        },
+        {
+          "name": "Flannel Man",
+          "origin": "Sleep paralysis lore",
+          "category": "Spectral",
+          "lore": "Red-plaid figure seen during sleep paralysis; often benign but unsettling."
+        }
+      ],
+      "Medium": [
+        {
+          "name": "Bigfoot",
+          "origin": "Global/Pacific NW",
+          "category": "Humanoid",
+          "lore": "Hairy bipedal creature seen in forests; elusive and rarely aggressive."
+        },
+        {
+          "name": "Dark Watchers",
+          "origin": "California folklore",
+          "category": "Spectral",
+          "lore": "Shadowy figures watching from mountain ridges; vanish when approached."
+        },
+        {
+          "name": "Shaver Lake Humanoid",
+          "origin": "California sightings",
+          "category": "Humanoid",
+          "lore": "Tall, pale crawler seen near water; often linked to missing persons."
+        },
+        {
+          "name": "Colossal Clawed Beast",
+          "origin": "Oregon wilderness lore",
+          "category": "Beast",
+          "lore": "Oversized bear with unnatural claws; blamed for deep forest maulings."
+        },
+        {
+          "name": "Devil’s Lake Monster",
+          "origin": "Oregon lake lore",
+          "category": "Aquatic",
+          "lore": "Serpent-like creature seen in Devil’s Lake; known for dragging animals into the water."
+        },
+        {
+          "name": "Flatwoods Monster",
+          "origin": "West Virginia UFO lore",
+          "category": "Hybrid",
+          "lore": "Alien-like entity with glowing eyes and spade-shaped head; linked to a 1952 sighting."
+        },
+        {
+          "name": "Vegetable Man",
+          "origin": "West Virginia UFO lore",
+          "category": "Hybrid",
+          "lore": "Alien with syringe fingers that drains blood; described as plant-like and intelligent."
+        },
+        {
+          "name": "Pale Thing",
+          "origin": "YouTube horror",
+          "category": "Humanoid",
+          "lore": "Emaciated humanoid with stretched limbs and no face; often seen crawling near homes."
+        }
+      ],
+      "High": []
+    },
+    "Canada": {
+      "Low": [
+        {
+          "name": "Manipogo",
+          "origin": "Manitoba lake lore",
+          "category": "Aquatic",
+          "lore": "Serpentine lake creature akin to Nessie; rarely seen, never aggressive."
+        },
+        {
+          "name": "Igopogo",
+          "origin": "Ontario lake lore",
+          "category": "Aquatic",
+          "lore": "Lake Simcoe’s serpentine inhabitant; known for brief sightings and sonar blips."
+        },
+        {
+          "name": "Memegwesi",
+          "origin": "Ojibwe legend",
+          "category": "Humanoid",
+          "lore": "Small hairy humanoids that live near water; shy and rarely interact with humans."
+        },
+        {
+          "name": "Old Yellow Top",
+          "origin": "Ontario Bigfoot lore",
+          "category": "Humanoid",
+          "lore": "Blond-haired Bigfoot variant; seen near mining towns, considered gentle."
+        },
+        {
+          "name": "Ghost Moose",
+          "origin": "Nova Scotia ghost lore",
+          "category": "Spectral",
+          "lore": "Spectral moose seen before disasters; often described as pale and oversized."
+        }
+      ],
+      "Medium": [
+        {
+          "name": "Devil of Dungarvon",
+          "origin": "New Brunswick ghost lore",
+          "category": "Spectral",
+          "lore": "Screaming ghost of a murdered cook; haunts logging camps and riverside trails."
+        }
+      ],
+      "High": [
+        {
+          "name": "Waheela",
+          "origin": "Yukon/Arctic legend",
+          "category": "Beast",
+          "lore": "Giant wolf-like predator said to decapitate victims; linked to remote wilderness deaths."
+        },
+        {
+          "name": "Loup-Garou",
+          "origin": "Quebec folklore",
+          "category": "Shapeshifter",
+          "lore": "French-Canadian werewolf variant; cursed humans transform under moonlight and attack livestock."
+        },
+        {
+          "name": "Gougou",
+          "origin": "Mi'kmaq legend",
+          "category": "Beast",
+          "lore": "Giant female monster said to eat entire villages; feared by early explorers and native tribes."
+        }
+      ]
+    },
+    "Mexico & Central America": {
+      "Low": [],
+      "Medium": [
+        {
+          "name": "Ahuizotl",
+          "origin": "Aztec water lore",
+          "category": "Aquatic",
+          "lore": "Water-dwelling creature with a hand on its tail; drags victims into lakes and rivers."
+        }
+      ],
+      "High": [
+        {
+          "name": "Chupacabra",
+          "origin": "Puerto Rico/Mexico",
+          "category": "Beast",
+          "lore": "Blood-draining creature blamed for livestock deaths; described as reptilian or canine."
+        },
+        {
+          "name": "La Lechuza",
+          "origin": "Mexican witch lore",
+          "category": "Shapeshifter",
+          "lore": "Witch-owl hybrid that stalks at night; known for screeching and attacking travelers."
+        },
+        {
+          "name": "El Nahual",
+          "origin": "Mesoamerican legend",
+          "category": "Shapeshifter",
+          "lore": "Shapeshifting sorcerer who transforms into animals; feared for its magical and violent powers."
+        },
+        {
+          "name": "Tlahuelpuchi",
+          "origin": "Tlaxcala vampire lore",
+          "category": "Shapeshifter",
+          "lore": "Vampire-like shapeshifter that preys on infants; said to be born into cursed families."
+        }
+      ]
+    }
+  }
+}
